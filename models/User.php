@@ -4,10 +4,9 @@ namespace models;
 
 class User
 {
-   
-    private $id;
-    private $name;
-    private $email;
+    private int $id;
+    private string $name;
+    private string $email;
 
     public function __construct($id, $name, $email)
     {
@@ -16,17 +15,17 @@ class User
         $this->email = $email;
     }
 
-    public function getId()
+    public function getId(): int
     {
         return $this->id;
     }
 
-    public function getName()
+    public function getName(): string
     {
         return $this->name;
     }
 
-    public function getEmail()
+    public function getEmail(): string
     {
         return $this->email;
     }
