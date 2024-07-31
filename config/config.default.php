@@ -17,5 +17,8 @@ return [
 
         // 密码
         'password' => '',
+
+        // 数据库编码
+        'charset' => 'utf8',
     ],
 ];
