@@ -4,7 +4,40 @@ namespace models;
 
 class User
 {
-    # .vscode // Visual Studio Code 配置文件
-    # .idea // JetBrains IDE 配置文件
-    # .DS_Store // MacOS 文件系统中的隐藏文件
+   
+    private $id;
+    private $name;
+    private $email;
+
+    public function __construct($id, $name, $email)
+    {
+        $this->id = $id;
+        $this->name = $name;
+        $this->email = $email;
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    public function setEmail($email)
+    {
+        $this->email = $email;
+    }
 }
