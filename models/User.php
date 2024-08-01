@@ -39,4 +39,9 @@ class User
     {
         $this->email = $email;
     }
+
+    public function login(): bool
+    {
+        return true;
+    }
 }
